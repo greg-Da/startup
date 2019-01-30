@@ -12,7 +12,7 @@ require 'faker'
 end
 
 5.times do |i|
-    Category.create!(name: "category de merde numéro #{i}")
+    Category.create!(name: "category numéro #{i}")
 end
 
 
@@ -20,7 +20,7 @@ end
     Article.find(index+1).update( category_id: rand(1..5))
 end
 8.times do |i|
-    User.create(first_name: "user #{i+3}", last_name: "connard", email: "user_#{i}.connard@gmail.com")
+    User.create(first_name: "user #{i+3}", last_name: "dude", email: "user_#{i}.dude@gmail.com")
 end
 
 15.times do |i|
